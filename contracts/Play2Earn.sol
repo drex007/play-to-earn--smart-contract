@@ -73,7 +73,7 @@ contract PlayToEarn  is Ownable,ReentrancyGuard, ERC20 {
     mapping(uint256 => InvitationStruct[]) invitationsOf;
 
 
-    constructor (uint56 _pct) Ownable(msg.sender) ERC20('PlayToEarn', 'P2E') {
+    constructor (uint56 _pct) ERC20('PlayToEarn', 'P2E') {
         servicePct = _pct;
 
     }
